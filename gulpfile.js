@@ -62,10 +62,10 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
   gulp.src('js/*.js')
   .pipe(uglify())
-  /*.pipe(rename({
+  .pipe(rename({
     dirname: "min",
     suffix: ".min",
-  }))*/
+  }))
   .pipe(concat('scripts.min.js'))
   .pipe(gulp.dest('js/min'))
 });

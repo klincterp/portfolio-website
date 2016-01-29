@@ -15,9 +15,6 @@
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<!-- JS ------------------------------------------------------ -->
-	<script src="js/min/scripts.min.js"></script>
-
 	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -27,24 +24,55 @@
 			<div class="container">
 				<ul class="navbar-list">
 					<li class="navbar-item">
-						<a href="" class="name">Jonah Best</a>
+						<div class="nav-link nav-name" data-nav-target="front">Jonah Best</div>
 					</li>
 					<li class="navbar-item">
-						<a href="" class="nav-link">contact</a>
+						<div class="nav-link" data-nav-target="contact">contact</div>
 					</li>
 					<li class="navbar-item">
-						<a href="" class="nav-link">about</a>
+						<div class="nav-link" data-nav-target="about">about</div>
 					</li>
 					<li class="navbar-item">
-						<a href="" class="nav-link">blog</a>
+						<a href="#" class="nav-link">blog</a>
 					</li>
 					<li class="navbar-item">
-						<a href="" class="nav-link">works</a>
+						<div class="nav-link" data-nav-target="works">works</div>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<iframe width="960" height="720" src="https://www.youtube.com/embed/4KRRrF7-sy8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<div class="container content-container">
+			<section id="section-front">
+				<div class="row">
+					<div class="twelve columns">
+						<div class="embed-container">
+							<iframe src="https://www.youtube.com/embed/4KRRrF7-sy8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-works">
+				<div class="row">
+					<div class="twelve columns">
+						<div class="works-header">
+							<img class="responsive-img works-img" src="images/jonah_works_header.jpg" alt="">
+							<h2 class="recent-works-text">recent works</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-about">
+				
+			</section>
+
+			<section id="section-contact">
+				
+			</section>
+		</div>
 	</div>
 </body>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/min/scripts.min.js"></script>
 </html>
